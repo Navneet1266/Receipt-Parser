@@ -1,0 +1,11 @@
+{
+  "name": "receipt-parser",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -c \"blue,green\" -n \"server,client\" \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "setup": "npm install && npm install --prefix server && npm install --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
